@@ -48,8 +48,6 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 - [GitHub - ryanoasis/nerd-fonts: Iconic font aggregator, collection, &amp; patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, &amp; more](https://github.com/ryanoasis/nerd-fonts)
 
-
-
 - ```bash
   git clone https://github.com/ryanoasis/nerd-fonts.git --depth 1
   cd nerd-fonts
@@ -64,3 +62,27 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   ```
 
 - 如果用iterm2，在preference中frofiles-text-font 更改为Hack Nerd Font
+
+### 3.tmux
+
+- 安装：
+  
+  ```bash
+  brew install tmux
+  ```
+
+- 将./tmux 放入~/.config
+
+-  在.zshrc或者或者.bashrc中添加
+
+- ```bash
+  export TERM="xterm-256color"
+  ```
+
+- 安装tmux插件管理器
+
+- ```bash
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  ```
+
+- 
