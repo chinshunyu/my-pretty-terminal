@@ -73,7 +73,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 - 将./tmux 放入~/.config
 
--  在.zshrc或者或者.bashrc中添加
+- 在.zshrc或者或者.bashrc中添加
 
 - ```bash
   export TERM="xterm-256color"
@@ -83,6 +83,12 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 - ```bash
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  ```
+
+### 4.安装neovim
+
+- ```bash
+  brew install neovim
   ```
 
 - 
