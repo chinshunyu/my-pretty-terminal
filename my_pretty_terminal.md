@@ -91,4 +91,42 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   brew install neovim
   ```
 
-- 
+### 5.安装astroNvim
+
+- astronvim.com
+
+- requirements中所有optional requirements安装
+
+- 按照installation步骤执行
+
+- 克隆仓库：
+
+- ```bash
+  git clone https://github.com/AstroNvim/user_example ~/.config/nvim/lua/user
+  ```
+
+- 对仓库进行个人git管理：
+
+- ```bash
+  cd ~/.config/nvim/lua/user
+  rm -rf .git
+  git init
+  ```
+
+- 可以将user目录放入github进行管理
+
+- 之后的配置修改都在~/.config/nvim/lua/user中
+
+- 更换主题:github.com/cappuccin/nvim
+
+- 将该项目configuration内容放入~/.config/nvim/lua/user/plugins/cappuccin.lua
+
+- 注释掉~/.config/nvim/lua/user/init.lua中的colorscheme一行，同时在user目录下新建colorscheme.lua文件，写入
+
+- ```lua
+  return "catppuccin"
+  ```
+
+- 之后的颜色都在这个文件中更改
+
+- 配置自动补全：plugins/cmp.lua
