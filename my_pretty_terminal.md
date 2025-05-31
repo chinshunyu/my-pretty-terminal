@@ -32,7 +32,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 - 
 
-- 安装zsh的powerlevel10k主题（安装时注意跳过所有配置向导）
+<!-- - 安装zsh的powerlevel10k主题（安装时注意跳过所有配置向导）
 
 - ```bash
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -42,7 +42,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   
   ```bash
   ~/.zshrc
-  ```
+  ``` -->
 
 - 安装字体库
 
@@ -56,9 +56,14 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 - 修改终端字体及主题：
 
+<!-- - ```bash -->
+  <!-- vim ~/.zshrc
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+  ``` -->
+
 - ```bash
   vim ~/.zshrc
-  ZSH_THEME="powerlevel10k/powerlevel10k"
+  ZSH_THEME="sonicradish"
   ```
 
 - 如果用iterm2，在preference中frofiles-text-font 更改为Hack Nerd Font
@@ -91,7 +96,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   brew install neovim
   ```
 
-### 5.安装astroNvim
+<!-- ### 5.安装astroNvim
 
 - astronvim.com
 
@@ -129,4 +134,6 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 - 之后的颜色都在这个文件中更改
 
-- 配置自动补全：plugins/cmp.lua
+- 配置自动补全：plugins/cmp.lua -->
+
+### 5.用.config目录替换~/.config，包括kitty,nvim,tmux,neofetch等配置

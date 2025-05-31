@@ -1,0 +1,5 @@
+# show neofetch when start
+neofetch
+
+fortune | cowsay
+
