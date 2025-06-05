@@ -1,0 +1,66 @@
+//windsurf mcp config
+{
+    "mcpServers": {
+      "superMemory": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "supergateway",
+          "--sse",
+          "https://mcp.supermemory.ai/"
+        ]
+      },
+      "playwright-mcp-server":{
+        "command":"npx",
+        "args": [
+          "-y",
+          "@executeautomation/playwright-mcp-server"
+        ]
+      },
+      "context7":{
+        "command": "npx",
+        "args": ["-y", "@upstash/context7-mcp@latest"]
+      },
+      "mcp-deepwiki": {
+        "command": "npx",
+        "args": ["-y", "mcp-deepwiki@latest"]
+      },
+      "github": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-github"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+        }
+      },
+      "taskmaster-ai": {
+            "command": "npx",
+            "args": ["-y", "--package=task-master-ai", "task-master-ai"],
+            "env": {
+              "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY_HERE",
+              "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE",
+              "OPENAI_API_KEY": "YOUR_OPENAI_KEY_HERE",
+              "GOOGLE_API_KEY": "",
+              "MISTRAL_API_KEY": "",
+              "OPENROUTER_API_KEY": "",
+              "XAI_API_KEY": "",
+              "AZURE_OPENAI_API_KEY": "YOUR_AZURE_KEY_HERE"
+            }
+      },
+      "sequential-thinking": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      }   
+    },
+        "mcp-feedback-enhanced": {
+          "command": "uvx",
+          "args": ["mcp-feedback-enhanced@latest"],
+          "timeout": 600,
+          "autoApprove": ["interactive_feedback"]
+        }
+  }
